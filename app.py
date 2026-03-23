@@ -153,7 +153,7 @@ if menu == "HOME":
     st.title("CONCRETE CRACK ANALYSIS SYSTEM")
 
     st.markdown("""
-### Intelligent Luminescen Crack Detection using Computer Vision  
+### Intelligent Luminescent Crack Detection using Computer Vision  
 
 Analyze structural cracks using:
 - Angle-based classification  
