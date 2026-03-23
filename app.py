@@ -61,7 +61,7 @@ div[role="radiogroup"] {
     display: flex;
     justify-content: center;
     gap: 24px;
-    background: rgba(0,0,0,0.0);
+    background: rgba(255,255,255,0.0);
     padding: 14px 20px;
     border-radius: 18px;
     backdrop-filter: blur(10px);
@@ -75,16 +75,16 @@ div[role="radiogroup"] label > div:first-child {
 
 /* NAV TEXT */
 div[role="radiogroup"] label {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0 !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
+   
+    
+    
+    
+    font-size: 50px !important;
+    font-weight: 1000 !important;
     color: white !important;
     padding: 8px 18px !important;
     border-radius: 12px !important;
-    transition: all 0.25s ease;
+   
     cursor: pointer !important;
 }
 
@@ -95,11 +95,8 @@ div[role="radiogroup"] label:hover {
     transform: scale(1.05);
 }
 
-/* ACTIVE ITEM */
-div[role="radiogroup"] input:checked + div {
-    color: #00ADB5 !important;
-    font-weight: 800 !important;
-}
+
+
 
 /* Dark overlay */
 .overlay {
@@ -118,17 +115,19 @@ div[role="radiogroup"] input:checked + div {
 }
 
 /* Text styling */
-h1, h2, h3, h4, p {
-    color: black;
+h1, h2, h3, h4, h5, h6, p, label, li, div {
+    color: black !important;
 }
 
 /* Buttons */
-.stButton>button {
-    background-color: #00ADB5;
-    color: black;
+.stButton > button,
+.stDownloadButton > button {
+    background-color: white;
+    color: white;
     border-radius: 10px;
     height: 3em;
     width: 100%;
+    font-weight: bold;
 }
 
 /* Metric color */
@@ -154,7 +153,7 @@ if menu == "HOME":
     st.title("CONCRETE CRACK ANALYSIS SYSTEM")
 
     st.markdown("""
-### Intelligent Crack Detection using Computer Vision  
+### Intelligent Luminescen Crack Detection using Computer Vision  
 
 Analyze structural cracks using:
 - Angle-based classification  
@@ -410,13 +409,13 @@ if menu == "TEAM":
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.subheader("Avanthika Sundar")
         st.write("Civil Engineer, 4th Year")
-        st.write("Specialization: Structural Analysis")
+        st.write("Specialization: Material Testing")
         st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.subheader("Gayathri Pradeep")
         st.write("Civil Engineer, 4th Year")
-        st.write("Specialization: Material Testing")
+        st.write("Specialization: Structural Analysis")
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col2:
