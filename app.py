@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, p, label, li, div {
 
 menu = st.radio(
     " ",
-    ["HOME", "ANALYSIS", "TEAM"],
+    ["HOME", "ANALYSIS", "ABOUT"],
     horizontal=True
 )
 
@@ -396,7 +396,7 @@ if menu == "ANALYSIS":
 
 
 
-if menu == "TEAM":
+if menu == "ABOUT":
 
     #st.markdown('<div class="overlay">', unsafe_allow_html=True)
 
